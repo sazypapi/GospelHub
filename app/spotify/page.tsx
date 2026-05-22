@@ -2,6 +2,7 @@
 import Containers from "@/components/global/Container";
 import { Button } from "@/components/ui/button";
 import { getSpotifyPlaylist } from "@/utils/actions";
+import { SpotifyPlaylist } from "@prisma/client";
 import Link from "next/link";
 import React from "react";
 
@@ -10,7 +11,7 @@ async function SpotifyPage() {
   return (
     <div className="py-10">
       <Containers className="px-2 grid grid-cols-1 gap-5">
-        {spotifyPlaylist.map((playlist) => (
+        {spotifyPlaylist.map((playlist: SpotifyPlaylist) => (
           <div
             key={playlist.id}
             className="border-2 border-neutral-200 px-4 py-5 flex align-middle items-center flex-col justify-center mb-4">

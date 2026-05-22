@@ -2,6 +2,7 @@
 import Containers from "@/components/global/Container";
 import { Button } from "@/components/ui/button";
 import { getAppleMusicPlaylist } from "@/utils/actions";
+import { AppleMusicPlaylist } from "@prisma/client";
 import Link from "next/link";
 import React from "react";
 
@@ -10,7 +11,7 @@ async function AppleMusicPage() {
   return (
     <div className="py-10">
       <Containers className="px-2 grid grid-cols-1 gap-5">
-        {appleMusicPlaylist.map((playlist) => (
+        {appleMusicPlaylist.map((playlist: AppleMusicPlaylist) => (
           <div
             key={playlist.id}
             className="border-2 border-neutral-200 px-4 py-5 flex align-middle items-center flex-col justify-center mb-4">
