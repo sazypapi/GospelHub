@@ -1,0 +1,37 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+model SpotifyPlaylist {
+  id          String   @id @default(cuid())
+  name        String
+  description String
+  image       String
+  link String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model AppleMusicPlaylist {
+  id          String   @id @default(cuid())
+  name        String
+  description String
+  image       String
+  link        String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model NewGospelFriday {
+  id        String   @id @default(cuid())
+  image     String
+  text     String
+  backgroundImage    String
+  spotifyLink String
+  appleMusicLink String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
