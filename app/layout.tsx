@@ -7,6 +7,7 @@ import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/global/Footer";
 import Providers from "./Providers";
 import { Toaster } from "@/components/ui/sonner";
+import BottomNav from "@/components/global/BottomNav";
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -41,6 +42,9 @@ export default function RootLayout({
           <Navbar />
           {children}
           <Footer />
+          <div className="lg:hidden fixed bottom-1 left-0 right-0 z-999 flex justify-center pointer-events-none">
+            <BottomNav />
+          </div>
           <Toaster />
         </Providers>
       </body>

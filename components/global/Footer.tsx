@@ -2,7 +2,7 @@ import { Mail, Phone } from "lucide-react";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 function Footer() {
   return (
-    <footer className="bg-white border-t-2 border-neutral-400 text-black w-full flex flex-col justify-center items-center pt-8 px-8 mt-[10vh]">
+    <footer className="bg-white border-t-2 border-neutral-400 lg:pb-0 pb-20 text-black w-full flex flex-col justify-center items-center pt-8 px-8 mt-[10vh]">
       <h3 className="font-azonix text-sm border-b border-neutral-800 pb-3 mb-1 text-center">
         WEBSITE AND GRAPHICS BY ZEDEK&apos;S MEDIA
       </h3>
