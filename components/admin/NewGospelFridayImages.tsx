@@ -77,6 +77,7 @@ function NewGospelFridayImages({
     if (uploadedUrl && backgroundUploadedUrl) {
       imagesUploadedState(true);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [uploadedUrl, backgroundUploadedUrl]);
   return (
     <div>
@@ -189,6 +190,7 @@ function NewGospelFridayImages({
                 />
                 <Button
                   variant="default"
+                  type="button"
                   onClick={handleBackgroundUpload}
                   disabled={isBackgroundUploading || !backgroundFile}
                   className="bg-white text-black border-2 border-black hover:bg-black hover:text-white transition duration-500">

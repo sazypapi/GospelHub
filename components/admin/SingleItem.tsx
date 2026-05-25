@@ -140,6 +140,7 @@ function SingleItem({ playlist, onChange }: Props) {
                 />
                 <Button
                   variant="default"
+                  type="button"
                   onClick={handleUpload}
                   disabled={isUploading || !file}
                   className="bg-white text-black border-2 border-black hover:bg-black hover:text-white transition duration-500">
