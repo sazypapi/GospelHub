@@ -42,9 +42,9 @@ export default function RootLayout({
           <Navbar />
           {children}
           <Footer />
-          {/* <div className="lg:hidden fixed bottom-1 left-0 right-0 z-999 flex justify-center pointer-events-none">
+          <div className="lg:hidden fixed bottom-1 left-0 right-0 z-999 flex justify-center pointer-events-none">
             <BottomNav />
-          </div> */}
+          </div>
           <Toaster />
         </Providers>
       </body>

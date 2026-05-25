@@ -1,3 +1,4 @@
+"use client";
 /* eslint-disable @next/next/no-img-element */
 import { NewGospelFriday } from "@prisma/client";
 import { Label } from "../ui/label";
