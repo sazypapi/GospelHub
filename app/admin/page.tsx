@@ -5,7 +5,7 @@ import { logoutAdmin } from "@/utils/actions";
 export default function AdminPage() {
   return (
     <div>
-      <Containers className="py-4">
+      <Containers className="py-4 px-2">
         <div className="flex items-center justify-between align-middle mb-5 sm:mb-10">
           <h1 className="font-azonix text-base sm:text-xl text-left">
             Welcome, Admin
