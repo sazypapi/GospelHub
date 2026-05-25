@@ -19,11 +19,11 @@ async function AppleMusicPage() {
               {playlist.name}
             </h2>
             <div className="mt-4 flex flex-col lg:flex-row gap-3 lg:gap-10 justify-between items-center">
-              <div className="basis-full flex justify-center lg:basis-2/5">
+              <div className="basis-full flex justify-center lg:justify-start lg:basis-2/5">
                 <img
-                  src="/img/landing-pagePic.png"
-                  alt="Man listening to music"
-                  className="w-[90%] lg:w-full self-center"
+                  src={playlist.image}
+                  alt={playlist.name}
+                  className="w-[90%] lg:w-[80%] self-center"
                 />
               </div>
               <div className="basis-full flex flex-col justify-start lg:basis-2/5">
