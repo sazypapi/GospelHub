@@ -6,7 +6,7 @@ import SpotifyTab from "./SpotifyTab";
 function AdminTab() {
   return (
     <div>
-      <Tabs defaultValue="spotify" className="mt-10`">
+      <Tabs defaultValue="spotify" className="mt-10">
         <TabsList>
           <TabsTrigger value="spotify" className="font-azonix">
             Spotify
