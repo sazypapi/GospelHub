@@ -26,7 +26,7 @@ async function SpotifyPage() {
                   className="w-[90%] lg:w-[80%] self-center"
                 />
               </div>
-              <div className="basis-full flex flex-col justify-center lg:justify-start lg:basis-2/5">
+              <div className="basis-full flex flex-col justify-center items-center lg:items-start lg:justify-start lg:basis-2/5">
                 <p className="lg:text-lg text-base text-center lg:text-left text-black font-azonix mt-2">
                   {playlist.description}
                 </p>
