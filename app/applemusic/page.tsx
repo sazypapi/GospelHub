@@ -10,7 +10,7 @@ async function AppleMusicPage() {
   const appleMusicPlaylist = await getAppleMusicPlaylist();
   return (
     <div className="py-10">
-      <Containers className="px-2 grid grid-cols-1 gap-5">
+      {/* <Containers className="px-2 grid grid-cols-1 gap-5">
         {appleMusicPlaylist.map((playlist: AppleMusicPlaylist) => (
           <div
             key={playlist.id}
@@ -39,7 +39,12 @@ async function AppleMusicPage() {
             </div>
           </div>
         ))}
-      </Containers>
+      </Containers> */}
+      <div className="min-h-screen flex items-center justify-center">
+        <p className="text-2xl font-semibold tracking-tight">
+          🚧Page is Under Construction
+        </p>
+      </div>
     </div>
   );
 }

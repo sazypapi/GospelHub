@@ -10,12 +10,12 @@ export default function Home() {
       <Containers className="px-2">
         <Hero />
         <div className="flex justify-center items-center gap-5 mt-10">
-          <Link href="#">
+          <Link href="/spotify">
             <Button className="font-cocogoose font-extrabold hover:cursor-pointer transition duration-500 bg-white text-black rounded-none border-3 border-black hover:text-white hover:bg-black text-sm sm:text-base py-4 w-40 sm:w-50">
               SPOTIFY
             </Button>
           </Link>
-          <Link href="#">
+          <Link href="/applemusic">
             <Button className="font-cocogoose font-extrabold hover:cursor-pointer transition duration-500 bg-white text-black rounded-none border-3 border-black hover:text-white hover:bg-black text-sm sm:text-base py-4 w-40 sm:w-50">
               APPLE MUSIC
             </Button>
